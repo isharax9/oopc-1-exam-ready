@@ -9,14 +9,13 @@ package mcq_paper_01;
  *
  * @author isharaLakshitha
  */
-class Obj {
-    Object ObjReturning() {
-        System.out.println("Obj");
-        return new Obj();
-    }
+class Aeroplane {
 
     public static void main(String[] args) {
-        System.out.println(Obj.ObjReturning());
-        Obj obj = new Obj();
+        int Engine = 5;
+        if (++Engine > 5 || ++Engine > 6) {
+            Engine++;
+        }
+        System.out.println(Engine);
     }
 }

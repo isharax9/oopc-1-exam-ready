@@ -9,14 +9,21 @@ package mcq_paper_01;
  *
  * @author isharaLakshitha
  */
-class Obj {
-    Object ObjReturning() {
-        System.out.println("Obj");
-        return new Obj();
+class D {
+
+    staticint m1(int i) {
+        return i; // 1
+    }
+
+    static void m2(int i) {
+        return i; // 2
+    }
+
+    staticint m3(int i) {
+        return; // 3
     }
 
     public static void main(String[] args) {
-        System.out.println(Obj.ObjReturning());
-        Obj obj = new Obj();
+        System.out.print("" + m1(1) + m2(2) + m3(3)); //4
     }
 }

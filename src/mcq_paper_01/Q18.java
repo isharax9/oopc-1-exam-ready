@@ -9,14 +9,17 @@ package mcq_paper_01;
  *
  * @author isharaLakshitha
  */
-class Obj {
-    Object ObjReturning() {
-        System.out.println("Obj");
-        return new Obj();
+class Bike {
+
+    final int speedlimit  = 90;
+
+    void run() {
+        speedlimit = 400; //compilation errror here
+        System.out.println(speedlimit);
     }
 
-    public static void main(String[] args) {
-        System.out.println(Obj.ObjReturning());
-        Obj obj = new Obj();
+    public static void main(String args[]) {
+        Bike obj = new Bike();
+        obj.run();
     }
 }
